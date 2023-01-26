@@ -1,7 +1,6 @@
 package com.example.mynotesapp.feature_note.presentation.add_edit_note.components
 
 import android.annotation.SuppressLint
-import androidx.annotation.ColorInt
 import androidx.compose.animation.Animatable
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
@@ -69,7 +68,11 @@ fun AddEditNoteScreen(
                 onClick = { viewModel.onEvent(AddEditNoteEvent.SaveNote) },
                 backgroundColor = MaterialTheme.colors.primary
             ) {
-                Icon(imageVector = Icons.Default.Send, contentDescription = "Save Note Button")
+                Icon(
+                    imageVector = Icons.Default.Send,
+                    contentDescription = "Save Note Button",
+                    tint = Color.Black
+                )
             }
         },
         scaffoldState = scaffoldState
