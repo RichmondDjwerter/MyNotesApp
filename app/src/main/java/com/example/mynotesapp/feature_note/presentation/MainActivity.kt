@@ -1,4 +1,4 @@
-package com.example.mynotesapp
+package com.example.mynotesapp.feature_note.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    
+
                 }
             }
         }
